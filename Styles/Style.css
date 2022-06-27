@@ -27,6 +27,7 @@ nav, ul, a {
     position: absolute;
     width: 100vw;
     clip-path: inset(0 100% 0 0);
+    transition: clip-path, 0.3s;
 }
 
 ul {

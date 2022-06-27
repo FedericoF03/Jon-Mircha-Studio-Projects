@@ -1,10 +1,10 @@
 'use strict';
 
-const $navDisplay = document.querySelector(".nav")
-console.log($navDisplay.style)
-console.log($navDisplay.style == 'inset(0 100% 0 0)')
+const $navDisplay = document.querySelector(".nav");
+
 document.addEventListener("click", e=>{
     if (e.target.matches(".burger__icon")) {
-        if ($navDisplay.style.clip == "inset(0 100% 0 0)") {console.log("checkado")}
+        if ($navDisplay.style.clipPath != "inset(0px)") $navDisplay.style.clipPath = "inset(0px)";
+        else $navDisplay.style.clipPath = "inset(0px 100% 0px 0px)";
     }
 })
