@@ -61,7 +61,7 @@ document.addEventListener("click", e=>{
     }
 })
     document.addEventListener("keydown", e=>{
-        moveBall(e)
+        // moveBall(e)
     })
 
     const moveBall = (e)=>{
@@ -145,3 +145,19 @@ const webCam = ()=>{
 }
 
 webCam();
+
+const p = document.querySelectorAll(".text__flash")
+const findFlash = ()=>{
+    document.addEventListener("keyup", e=>{
+        if(e.target.matches("#inputFlash")) {
+            document.querySelectorAll(".box__img").forEach((el, i) => {
+                p[i].textContent.toLowerCase().startsWith(e.target.value) 
+                ? el.classList.remove("filter")
+                : el.classList.add("filter")
+            });
+        }
+    })
+}
+
+findFlash()
+
