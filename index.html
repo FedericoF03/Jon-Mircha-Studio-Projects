@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects DOM</title>
+    <title>Projectsssw DOM</title>
     <link rel="stylesheet" href="./Styles/Style.css">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
@@ -17,11 +17,38 @@
         <nav class="nav">
             <ul>
                 <a href="#"><li>Menu hamburguesa</li></a>
-                <a href="#"><li>Prueba</li></a>
+                <a href="#"><li>Reloj en tiempo real y alarma Sonora</li></a>
             </ul>
         </nav>
-        <section>
+        <section class="section__burger">
             <h1 class="burguer_title">Creo un menu hamburguesa con Js</h1>
+        </section>
+        <section class="section__alarm">
+            <h1 class="alarm">Alarma sonora y Reloj</h1>
+            <div class="box__alarm">
+                <p class="time"></p>
+                <img class="parl" controls src="./Assets/png-transparent-computer-icons-volume-loudspeaker-sound-miscellaneous-text-logo-removebg-preview.png" alt="">
+            </div>
+            <div class="box__button__alarm">
+                <button class="button__alarm" id="button__alarm1">Iniciar Reloj</button>
+                <button class="button__alarm" id="button__alarm2">Detener Reloj</button>
+                <button class="button__alarm" id="button__alarm3">Iniciar alarma sonora</button>
+                <button class="button__alarm" id="button__alarm4">Detener alarma sonora</button>
+            </div>
+        </section>
+        <section class="box__keyboard">
+            <h1 class="contdown__title">Atajos teclado y movimiento en cajita</h1>
+            <div class="box__key">
+                <div class="box__ball"></div>
+            </div>
+        </section>
+        <section class="box__countdown">
+            <h1 class="condown__title">Cuenta regresiva!</h1>
+        </section>
+        <div class="top__button"></div>
+        <section class="conteiner__webcam">
+                <h1>Webcam aceso</h1>
+                <video id="webcam"></video>
         </section>
     </div>
     <script src="./module.js"></script>

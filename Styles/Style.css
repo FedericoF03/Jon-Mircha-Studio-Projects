@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    font-family: 'League Spartan', sans-serif;;
+    font-family: 'League Spartan', sans-serif;
 }
 
 header {
@@ -10,7 +14,6 @@ header {
     justify-content: center;
     position: sticky;
     top: 0px;
-    width: 100vw;
 }
 
 nav, ul, a {
@@ -25,7 +28,6 @@ nav, ul, a {
 
 .nav {
     position: absolute;
-    width: 100vw;
     clip-path: inset(0 100% 0 0);
     transition: clip-path, 0.3s;
 }
@@ -44,6 +46,22 @@ li:hover {
     background-color: #36215b;
 }
 
+.button__alarm {
+    margin: 0 15px;
+    background-color: #000000;
+    color: rgb(180, 23, 23);
+    border: 2px solid #1c1919;
+    padding: 10px;
+    outline-width: 0px;
+    outline: 1px solid rgba(255, 255, 255, 0.738);
+    outline-offset: 5px;
+    text-shadow: -1px -1px 10px rgb(207 0 0 / 70%);
+}
+
+.section__burger {
+    height: 100vh;
+}
+
 .burger__icon {
     width: 60px;
     position: absolute;
@@ -60,3 +78,140 @@ li:hover {
     text-align: center;
 }
 
+.section__alarm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.box__button__alarm{
+    background-color: #0c0c0c;
+    padding: 20px 15px;
+    border-radius: 2px;
+}
+
+button:hover{
+    background-color: #1d1d1e;
+}
+
+button:disabled {
+    background-color: #1d1d1e;
+}
+
+.alarm {
+margin: 100px 0 0 0;
+font-size: 3em;
+}
+
+.time {
+    font-size: 5rem;
+    background-color: #000000;
+    color: rgb(171, 23, 23);
+    border: 6px solid #3e3b3b;
+    padding: 20px 35px;
+    min-width: 280px;
+    min-height: 75px;
+    box-shadow: 4px 9px 15px -3px rgb(0 0 0 / 50%);
+    text-align: center;
+    margin: 50px 0px 50px 55px;
+}
+
+.parl {
+    max-width: 55px;
+    margin-left: 0vw;
+    max-height: 55px;
+    align-self: center;
+    clip-path: inset(0 49% 0 0);
+    z-index: -1;
+}
+
+.box__alarm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0%;
+}
+
+@keyframes on {
+    50% {clip-path: inset(0 49% 0 0);}
+    75% {clip-path: inset(0 0% 0 0);}
+    100% {clip-path: inset(0 0% 0 0);}
+}
+
+.box__keyboard {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box__key {
+    background-color: #3e3b3b;
+    margin: 45px 25%;
+    width: 50vw;
+    min-height: 302px;
+}
+
+.button_keybo{
+    background-color: antiquewhite;
+    width: 200px;
+    height: 30px;
+    color: #000000;
+    text-align: center;
+}
+
+.box__ball {
+    display: inline-block;
+    background-color: #ffff00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}   
+
+.condown__title {
+    margin: 100px 0 0 0;
+    font-size: 3em;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 12px;
+}
+
+.box__countdown {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.text__contdown {
+    font-size: 2em;
+    width: 90vw;
+    text-align: center;
+    padding: 7px 0px 0px;
+    border-top: 1px solid rgb(10, 10, 10);
+    border-bottom: 1px solid rgb(10, 10, 10);
+}
+
+.top__button {
+    transition:  opacity 0.5s;
+    background-color: #ffff00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    top: 90vh;
+    left: 90vw;
+}
+
+.conteiner__webcam{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+video {
+    margin: auto;
+}
